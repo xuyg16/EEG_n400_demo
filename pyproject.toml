@@ -1,0 +1,15 @@
+[project]
+name = "eeg-n400-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "psychopy==2026.1.2",
+    "psychopy-glfw>=0.0.2",
+    "psychtoolbox>=3.0.19.14",
+    "pyglet==1.5.27",
+    "pylsl==1.18.6",
+]
+[tool.uv]
+environments = ["sys_platform == 'darwin'"]
