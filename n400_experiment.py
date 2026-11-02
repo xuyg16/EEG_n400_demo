@@ -61,7 +61,7 @@ def load_trials(filename):
 
 
 trials = load_trials(
-    Path("stimuli/N400_stimuli_list1_English.txt")
+    Path("stimuli/German/N400_stimuli_list1_German.txt")
 )
 
 print(f"Loaded {len(trials)} trials")
@@ -163,7 +163,7 @@ try:
         show_text("+", FIXATION_S)
 
         # 2. Prime
-        show_text(trial["prime"], PRIME_S, color="red")
+        show_text(trial["prime"], PRIME_S, color="orange")
 
         # 3. Blank interval
         win.flip()
@@ -193,36 +193,42 @@ try:
         response_rt = None
         target_cleared = False
 
+        reminder = visual.TextStim(
+            win,
+            text="LEFT = Related\nRIGHT = Unrelated",
+            color="white",
+            height=0.045,
+            alignText="center"
+        )
+
         while True:
             elapsed = target_clock.getTime()
 
-            # Remove target after 400 ms
+            # After the target duration, show the reminder
             if not target_cleared and elapsed >= TARGET_S:
+                reminder.draw()
                 win.flip()
                 target_cleared = True
 
-            # Check for keypresses
-            keys = event.getKeys(
-                keyList=["left", "right", "escape"],
-                timeStamped=target_clock
-            )
+                # Ignore responses before reminder onset
+                event.clearEvents(eventType="keyboard")
 
-            for key_name, key_rt in keys:
-                print(
-                    f"Detected: {key_name}, RT: {key_rt:.3f}s",
-                    flush=True
+            if target_cleared:
+                keys = event.getKeys(
+                    keyList=["left", "right", "escape"],
+                    timeStamped=target_clock
                 )
 
-                if key_name == "escape":
-                    raise KeyboardInterrupt
+                for key_name, key_rt in keys:
+                    if key_name == "escape":
+                        raise KeyboardInterrupt
 
-                if response_key is None:
-                    response_key = key_name
-                    response_rt = key_rt
+                    if response_key is None:
+                        response_key = key_name
+                        response_rt = key_rt
 
-            # Only advance after a response AND
-            # the target has been shown for 400 ms
-            if response_key is not None and target_cleared:
+            # Advance only after a response
+            if response_key is not None:
                 break
 
             core.wait(0.005)
@@ -267,7 +273,8 @@ try:
             writer.writeheader()
             writer.writerows(results)
 
-        # 7. Brief pause before next trial
+        # 7. Brief blank before next fixation
+        win.flip()
         core.wait(ITI_S)
 
 
