@@ -146,6 +146,27 @@ def show_text(text, duration, color="white"):
     core.wait(duration)
 
 
+def show_end_screen():
+    end_text = visual.TextStim(
+        win,
+        text=(
+            "Experiment completed!\n\n"
+            "Thank you for your participation.\n\n"
+            "Press SPACE to exit."
+        ),
+        color="white",
+        height=0.05,
+        alignText="center"
+    )
+
+    end_text.draw()
+    win.flip()
+
+    event.clearEvents()
+    event.waitKeys(keyList=["space"])
+
+
+
 # ---------- Main experiment ----------
 
 try:
@@ -278,7 +299,7 @@ try:
         win.flip()
         core.wait(ITI_S)
 
-
+    show_end_screen()
 except KeyboardInterrupt:
     print("Experiment stopped by user.")
 
