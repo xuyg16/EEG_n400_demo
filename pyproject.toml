@@ -12,4 +12,4 @@ dependencies = [
     "pylsl==1.18.6",
 ]
 [tool.uv]
-environments = ["sys_platform == 'darwin'", "sys_platform == 'linux'", "sys_platform == 'win32'"]
+environments = ["sys_platform == 'darwin'", "sys_platform == 'linux'"]
