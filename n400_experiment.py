@@ -93,8 +93,9 @@ outlet = StreamOutlet(info)
 # ---------- PsychoPy setup ----------
 
 win = visual.Window(
-    size=(800, 600),
-    fullscr=False,
+    size=(1920, 1080),
+    fullscr=True,
+    screen=1
     color="black",
     units="height",
     winType="pyglet"
