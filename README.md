@@ -12,8 +12,6 @@ If uv is not installed, follow the [installation instructions](https://docs.astr
 Clone the repository and install the dependencies:
 
 ```bash
-git clone <repository-url>
-cd EEG_n400_demo
 uv sync
 ```
 
