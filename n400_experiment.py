@@ -9,7 +9,7 @@ import random
 
 # ---------- Settings ----------
 
-N_TRIALS = 10  # Change to 100 for the complete experiment
+N_TRIALS = 100  # Change to 100 for the complete experiment
 
 FIXATION_S = 0.5
 PRIME_S = 1.0
@@ -61,7 +61,7 @@ def load_trials(filename):
 
 
 trials = load_trials(
-    Path("stimuli/German/N400_stimuli_list1_German.txt")
+    Path("stimuli/English/N400_stimuli_list1_English.txt")
 )
 
 print(f"Loaded {len(trials)} trials")
