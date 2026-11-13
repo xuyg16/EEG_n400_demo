@@ -1,0 +1,101 @@
+item;typ;bedingung;satz;krit_pos;krit_wort
+1;rollentausch;kongruent;Der Arzt behandelt den Patienten.;5;Patienten
+1;rollentausch;inkongruent;Der Patient behandelt den Arzt.;5;Arzt
+2;rollentausch;kongruent;Der Kellner bringt dem Gast die Speisekarte.;7;Speisekarte
+2;rollentausch;inkongruent;Der Gast bringt dem Kellner die Speisekarte.;7;Speisekarte
+3;rollentausch;kongruent;Der Kater fängt die Maus.;5;Maus
+3;rollentausch;inkongruent;Die Maus fängt den Kater.;5;Kater
+4;semantisch;kongruent;Der Friseur schneidet dem Kunden die Haare.;7;Haare
+4;semantisch;inkongruent;Der Friseur schneidet dem Kunden die Ohren.;7;Ohren
+5;rollentausch;kongruent;Der Polizist verhaftet den Dieb.;5;Dieb
+5;rollentausch;inkongruent;Der Dieb verhaftet den Polizisten.;5;Polizisten
+6;semantisch;kongruent;Am Apfelbaum hängen Früchte.;4;Früchte
+6;semantisch;inkongruent;Am Apfelbaum hängen Fische.;4;Fische
+7;rollentausch;kongruent;Der Schüler bittet die Lehrkraft um Nachhilfe.;7;Nachhilfe
+7;rollentausch;inkongruent;Die Lehrkraft bittet den Schüler um Nachhilfe.;7;Nachhilfe
+8;semantisch;kongruent;Der Himmel ist blau.;4;blau
+8;semantisch;inkongruent;Der Himmel ist grün.;4;grün
+9;rollentausch;kongruent;Der Fuchs frisst den Hasen.;5;Hasen
+9;rollentausch;inkongruent;Der Hase frisst den Fuchs.;5;Fuchs
+10;rollentausch;kongruent;Der Kellner bedient die Gäste.;5;Gäste
+10;rollentausch;inkongruent;Die Gäste bedienen den Kellner.;5;Kellner
+11;rollentausch;kongruent;Der Polizist durchsucht das Auto.;3;durchsucht
+11;rollentausch;inkongruent;Das Auto durchsucht den Polizisten.;3;durchsucht
+12;semantisch;kongruent;Der Anästhesist betäubt den Patienten.;3;betäubt
+12;semantisch;inkongruent;Der Anästhesist schminkt den Patienten.;3;schminkt
+13;semantisch;kongruent;Das Kind reitet.;3;reitet
+13;semantisch;inkongruent;Das Pferd reitet.;3;reitet
+14;semantisch;kongruent;Der Zwerg ist winzig.;4;winzig
+14;semantisch;inkongruent;Der Riese ist winzig.;4;winzig
+15;semantisch;kongruent;Der Sommer ist heiß.;4;heiß
+15;semantisch;inkongruent;Der Winter ist heiß.;4;heiß
+16;semantisch;kongruent;Das Flugzeug fliegt.;3;fliegt
+16;semantisch;inkongruent;Der Zug fliegt.;3;fliegt
+17;semantisch;kongruent;Der Millionär ist reich.;4;reich
+17;semantisch;inkongruent;Der Bettler ist reich.;4;reich
+18;semantisch;kongruent;Der Hund bellt.;3;bellt
+18;semantisch;inkongruent;Die Katze bellt.;3;bellt
+19;semantisch;kongruent;Der Frosch quakt.;3;quakt
+19;semantisch;inkongruent;Der Bär quakt.;3;quakt
+20;semantisch;kongruent;Die Kuh gibt Milch.;4;Milch
+20;semantisch;inkongruent;Der Stier gibt Milch.;4;Milch
+21;semantisch;kongruent;Der Fisch schwimmt.;3;schwimmt
+21;semantisch;inkongruent;Der Stein schwimmt.;3;schwimmt
+22;semantisch;kongruent;Zucker schmeckt süß.;3;süß
+22;semantisch;inkongruent;Zucker schmeckt salzig.;3;salzig
+23;semantisch;kongruent;Das Eis ist kalt.;4;kalt
+23;semantisch;inkongruent;Das Feuer ist kalt.;4;kalt
+24;semantisch;kongruent;Er trinkt Kaffee aus der Tasse.;6;Tasse
+24;semantisch;inkongruent;Er trinkt Kaffee aus der Socke.;6;Socke
+25;semantisch;kongruent;Sie schreibt den Brief mit einem Stift.;7;Stift
+25;semantisch;inkongruent;Sie schreibt den Brief mit einem Apfel.;7;Apfel
+26;semantisch;kongruent;Im Winter trägt man warme Handschuhe.;6;Handschuhe
+26;semantisch;inkongruent;Im Winter trägt man warme Löffel.;6;Löffel
+27;semantisch;kongruent;Die Ente schwimmt im Teich.;5;Teich
+27;semantisch;inkongruent;Die Ente schwimmt im Schrank.;5;Schrank
+28;semantisch;kongruent;Der Bus fährt auf der Straße.;6;Straße
+28;semantisch;inkongruent;Der Bus fährt auf der Wolke.;6;Wolke
+29;semantisch;kongruent;Nachts leuchten am Himmel die Sterne.;6;Sterne
+29;semantisch;inkongruent;Nachts leuchten am Himmel die Tische.;6;Tische
+30;semantisch;kongruent;Zum Frühstück isst er ein Brötchen.;6;Brötchen
+30;semantisch;inkongruent;Zum Frühstück isst er ein Fahrrad.;6;Fahrrad
+31;semantisch;kongruent;Die Bienen machen Honig.;4;Honig
+31;semantisch;inkongruent;Die Bienen machen Käse.;4;Käse
+32;semantisch;kongruent;Er schneidet das Brot mit dem Messer.;7;Messer
+32;semantisch;inkongruent;Er schneidet das Brot mit dem Kissen.;7;Kissen
+33;semantisch;kongruent;Sie putzt sich die Zähne mit Zahnpasta.;7;Zahnpasta
+33;semantisch;inkongruent;Sie putzt sich die Zähne mit Senf.;7;Senf
+34;semantisch;kongruent;Im Herbst werden die Blätter bunt.;6;bunt
+34;semantisch;inkongruent;Im Herbst werden die Blätter flüssig.;6;flüssig
+35;semantisch;kongruent;Der Dackel wedelt mit dem Schwanz.;6;Schwanz
+35;semantisch;inkongruent;Der Dackel wedelt mit dem Teppich.;6;Teppich
+36;semantisch;kongruent;Er öffnet die Tür mit dem Schlüssel.;7;Schlüssel
+36;semantisch;inkongruent;Er öffnet die Tür mit dem Joghurt.;7;Joghurt
+37;semantisch;kongruent;Sie liest jeden Abend ein Buch.;6;Buch
+37;semantisch;inkongruent;Sie liest jeden Abend ein Sofa.;6;Sofa
+38;semantisch;kongruent;Der Elefant trinkt Wasser.;4;Wasser
+38;semantisch;inkongruent;Der Elefant trinkt Benzin.;4;Benzin
+39;semantisch;kongruent;Sie stellt die Butter in den Kühlschrank.;7;Kühlschrank
+39;semantisch;inkongruent;Sie stellt die Butter in den Briefkasten.;7;Briefkasten
+40;semantisch;kongruent;Der Bauer melkt die Ziege.;5;Ziege
+40;semantisch;inkongruent;Der Bauer melkt die Henne.;5;Henne
+41;semantisch;kongruent;Das Baby schläft in der Wiege.;6;Wiege
+41;semantisch;inkongruent;Das Baby schläft in der Pfanne.;6;Pfanne
+42;semantisch;kongruent;Die Gitarre hat sechs Saiten.;5;Saiten
+42;semantisch;inkongruent;Die Gitarre hat sechs Räder.;5;Räder
+43;semantisch;kongruent;Ein Jahr hat zwölf Monate.;5;Monate
+43;semantisch;inkongruent;Ein Jahr hat zwölf Wochen.;5;Wochen
+44;semantisch;kongruent;Der Kapitän steuert das Schiff.;5;Schiff
+44;semantisch;inkongruent;Der Kapitän steuert das Gras.;5;Gras
+45;rollentausch;kongruent;Der Jäger schießt auf den Hirsch.;6;Hirsch
+45;rollentausch;inkongruent;Der Hirsch schießt auf den Jäger.;6;Jäger
+46;semantisch;kongruent;Das Huhn legt ein Ei.;5;Ei
+46;semantisch;inkongruent;Der Hahn legt ein Ei.;5;Ei
+47;semantisch;kongruent;Der Zahnarzt behandelt die Zähne.;5;Zähne
+47;semantisch;inkongruent;Der Zahnarzt behandelt die Reifen.;5;Reifen
+48;semantisch;kongruent;Im Kino schaut man einen Film.;6;Film
+48;semantisch;inkongruent;Im Kino schaut man einen Teller.;6;Teller
+49;semantisch;kongruent;Der Maler streicht die Wand.;5;Wand
+49;semantisch;inkongruent;Der Maler streicht die Musik.;5;Musik
+50;semantisch;kongruent;Mit der Schere schneidet man Papier.;6;Papier
+50;semantisch;inkongruent;Mit der Schere schneidet man Suppe.;6;Suppe
